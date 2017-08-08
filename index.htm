@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0019)http://thexion.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>xion</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<!-- global -->
+		<link rel="stylesheet" href="assets\css\style.css" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="icon" type="image/png" sizes="16x16" href="assets\images\favicon.png">
+        <script type="text/javascript" src="assets\js\jquery-1.10.2.js"></script>
+        <script type="text/javascript">
+        	$(document).ready(function() {
+			    function updateSize() {
+			        var winWidth  = $(window).width(),
+			            winHeight = $(window).height();
+			        
+			        $('.box').css({
+			            width:winWidth,
+			            height:winHeight
+			        });
+
+			    }
+			    updateSize();
+
+			    $(window).resize(function() {
+			        updateSize();
+			    });
+			 });
+        </script>
+	</head>
+	
+	<body>
+		<div class="box">
+			<div class="bg-back">
+			</div>
+			<div class="wrapper">
+				<video autoplay="" loop="" muted="" poster="assets/images/bg.jpg" id="bgvid">
+				    <source src="assets\video\videoplayback.mp4" type="video/mp4">
+					<source src="assets\video\videoplayback.txt" type="video/webm">
+				</source></source></video>
+				<div class="bg-front">
+					<div class="text">
+						<p>works in <b>action</b></p>
+					</div>				
+				</div>
+				
+				<div class="footer">
+					<div class="f-in">
+						
+						<div class="sosmed">
+							<a href="https://www.facebook.com/worldofxion" target="_blank"><div class="fb"></div></a>
+							<a href="https://www.linkedin.com/company/2611708" target="_blank"><div class="linkedin"></div></a>
+							<a href="https://www.instagram.com/worldofxion/" target="_blank"><div class="insta"></div></a>
+							<a href="https://goo.gl/maps/1rB2Cp538xH2" target="_blank"><div class="maps"></div></a>
+							<div class="clear"></div>
+						</div>
+						<div class="address">
+							<p>k-link tower 21<sup>st</sup> floor,<br>
+							jl. gatot subroto no 59a, jakarta - indonesia 12950<br>
+							<a href="tel:+622129201558">+62 21 2920 1558-59</a> | <a href="mailto:hello@thexion.com">hello@thexion.com</a></p>
+						</div>
+						<div class="clear"></div>
+						
+					</div>
+			    </div>
+			</div>
+		</div>
+	
+	<script>
+
+	// var scene = document.getElementById('scene');
+	// var parallax = new Parallax(scene);
+
+	</script>
+</body></html>
