@@ -1,0 +1,364 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  html {
+    background: url("../images/bg.jpg") center center no-repeat;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  html {
+    background: url("../images/bg.jpg") center center no-repeat;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    background: url("../images/bg.jpg") center center no-repeat;
+  }
+}
+
+.clear {
+  clear: both;
+  float: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .wrapper {
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .wrapper {
+    overflow: scroll;
+  }
+}
+
+.box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg-back {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 10;
+}
+
+.bg-front-wrap {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .bg-front-wrap {
+    position: relative;
+    height: auto;
+    top: 25%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .bg-front-wrap {
+    position: relative;
+    height: auto;
+    top: 5%;
+  }
+}
+
+.bg-front {
+  max-width: 400px;
+  height: 400px;
+  background: url("../images/bg-front.png") center center no-repeat;
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  margin: auto;
+  position: absolute;
+  z-index: 99;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .bg-front {
+    background-position: center center;
+    bottom: auto;
+    top: 40px;
+    background-size: 60%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .bg-front {
+    position: relative;
+    top: -10%;
+    background-size: 30%;
+    max-width: 100%;
+  }
+}
+.bg-front img {
+  width: 100%;
+}
+.bg-front .text {
+  width: 100%;
+  position: absolute;
+  bottom: -10%;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .bg-front .text {
+    bottom: 13%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .bg-front .text {
+    bottom: 13%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .bg-front .text {
+    bottom: 18%;
+  }
+}
+.bg-front .text p {
+  text-align: center;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 34px;
+  letter-spacing: 10px;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .bg-front .text p {
+    width: 260px;
+    margin: 0 auto;
+    letter-spacing: 7px;
+    text-align: right;
+    font-size: 20px;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .bg-front .text p {
+    width: 260px;
+    margin: 0 auto;
+    letter-spacing: 7px;
+    font-size: 20px;
+    bottom: 0;
+  }
+}
+.bg-front .text p b {
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width: 1400px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  #bgvid {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  #bgvid {
+    display: none;
+  }
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  top: 93%;
+  z-index: 99;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .footer {
+    position: absolute;
+    top: 85%;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .footer {
+    top: -20%;
+    padding: 30px 0;
+  }
+}
+.footer .f-in {
+  max-width: 410px;
+  height: 100%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .footer .f-in {
+    width: 95%;
+  }
+}
+.footer .f-in .sosmed {
+  float: left;
+  height: auto;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .footer .f-in .sosmed {
+    width: 155px;
+    margin: 0 auto;
+    float: none;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .footer .f-in .sosmed {
+    width: 155px;
+    margin: 0 auto;
+    float: none;
+  }
+}
+.footer .f-in .sosmed .fb {
+  width: 38px;
+  height: 38px;
+  background: url("../images/sosmed.png") 0% 0% no-repeat;
+  float: left;
+}
+.footer .f-in .sosmed .fb:hover {
+  background: url("../images/sosmed.png") 0% 100% no-repeat;
+}
+.footer .f-in .sosmed .linkedin {
+  width: 38px;
+  height: 38px;
+  background: url("../images/sosmed.png") 33% 0% no-repeat;
+  float: left;
+}
+.footer .f-in .sosmed .linkedin:hover {
+  background: url("../images/sosmed.png") 33% 100% no-repeat;
+}
+.footer .f-in .sosmed .insta {
+  width: 39px;
+  height: 38px;
+  background: url("../images/sosmed.png") 66% 0% no-repeat;
+  float: left;
+}
+.footer .f-in .sosmed .insta:hover {
+  background: url("../images/sosmed.png") 66% 100% no-repeat;
+}
+.footer .f-in .sosmed .maps {
+  width: 39px;
+  height: 38px;
+  background: url("../images/sosmed.png") 100% 0% no-repeat;
+  float: left;
+}
+.footer .f-in .sosmed .maps:hover {
+  background: url("../images/sosmed.png") 100% 100% no-repeat;
+}
+.footer .f-in .address {
+  float: left;
+  padding: 0 10px;
+  position: relative;
+  bottom: 2px;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .footer .f-in .address {
+    float: none;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .footer .f-in .address {
+    float: none;
+    padding: 5px;
+  }
+}
+.footer .f-in .address p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  color: #fff;
+  line-height: 12px;
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .footer .f-in .address p {
+    font-size: 10px;
+    text-align: center;
+    line-height: 12px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .footer .f-in .address p {
+    font-size: 10px;
+    text-align: center;
+    line-height: 12px;
+  }
+}
+.footer .f-in .address a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
